@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="400.0" minWidth="500.0" prefHeight="630.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mas.zajeciaController">
+   <children>
+
+      <Label alignment="CENTER" layoutX="133.0" layoutY="14.0" text="Rezerwacja Zajęć" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="53.0" layoutY="65.0" text="Filtry" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="65.0" />
+
+      <ComboBox fx:id="mojComboBox" layoutX="126.0" layoutY="61.0" promptText="Wybierz Zajecia" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="61.0" />
+
+      <Label layoutX="162.0" layoutY="106.0" text="Dostępne Zajęcia" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="106.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+
+      <ListView fx:id="listaZajec" layoutX="53.0" layoutY="134.0" prefHeight="300.0" prefWidth="494.0" AnchorPane.bottomAnchor="196.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="134.0" />
+
+      <Label layoutX="53.0" layoutY="441.0" prefHeight="26.0" prefWidth="494.0" text="Trener prowadzący zajęcia:" AnchorPane.bottomAnchor="163.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="53.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="szczegoly" layoutX="53.0" layoutY="466.0" prefHeight="113.0" prefWidth="494.0" style="-fx-border-color: grey; -fx-border-width: 0.5;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="53.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+
+      <Button fx:id="zarezerwujButton" layoutX="53.0" layoutY="594.0" mnemonicParsing="false" text="Zarezerwuj" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="53.0" />
+
+      <Button fx:id="anulujButton" layoutX="370.0" layoutY="594.0" mnemonicParsing="false" text="Anuluj" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="53.0" />
+
+   </children>
+</AnchorPane>

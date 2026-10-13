@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="400.0" minWidth="500.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mas.KlientController">
+   <children>
+
+      <Label alignment="CENTER" text="Dane Klienta" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+
+      <GridPane hgap="20.0" vgap="10.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="80.0">
+
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="150.0" minWidth="100.0" prefWidth="120.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="200.0" />
+         </columnConstraints>
+
+         <rowConstraints>
+            <RowConstraints minHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+
+         <children>
+            <Label text="PESEL" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <font><Font size="14.0" /></font>
+            </Label>
+            <TextField fx:id="pesel" promptText="11 cyfr" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Imię" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <font><Font size="14.0" /></font>
+            </Label>
+            <TextField fx:id="imie" promptText="Podaj imię" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Nazwisko" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               <font><Font size="14.0" /></font>
+            </Label>
+            <TextField fx:id="nazwisko" promptText="Podaj nazwisko" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Data Urodzenia" GridPane.columnIndex="0" GridPane.rowIndex="3">
+               <font><Font size="14.0" /></font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <TextField fx:id="dzien" prefWidth="50.0" promptText="dd" />
+                  <Label text="/" />
+                  <TextField fx:id="miesiac" prefWidth="50.0" promptText="mm" />
+                  <Label text="/" />
+                  <TextField fx:id="rok" prefWidth="70.0" promptText="rrrr" />
+               </children>
+            </HBox>
+
+            <Label text="Email" GridPane.columnIndex="0" GridPane.rowIndex="4">
+               <font><Font size="14.0" /></font>
+            </Label>
+            <TextField fx:id="email" promptText="przyklad@email.com" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+            <Label text="Numer Telefonu" GridPane.columnIndex="0" GridPane.rowIndex="5">
+               <font><Font size="14.0" /></font>
+            </Label>
+            <TextField fx:id="nrtel" promptText="9 cyfr" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+
+      <Button fx:id="dodajKlienta" mnemonicParsing="false" text="Dodaj Klienta" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="53.0" />
+
+      <Button fx:id="anuluj" mnemonicParsing="false" text="Anuluj" AnchorPane.bottomAnchor="35.0" AnchorPane.rightAnchor="53.0" />
+
+   </children>
+</AnchorPane>
